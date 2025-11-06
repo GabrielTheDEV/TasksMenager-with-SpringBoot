@@ -1,0 +1,33 @@
+services:
+  app:
+    build: .
+    container_name: Spring_API
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/springtaskDB
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: com.mysql.cj.jdbc.Driver
+
+
+
+  db:
+    image: mysql:8
+    container_name: databaseSpring
+    environment:
+      MYSQL_ROOT_PASSWORD: uui321
+      MYSQL_DATABASE: springtaskDB
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3310:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
