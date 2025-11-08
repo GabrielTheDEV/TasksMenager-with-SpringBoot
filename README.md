@@ -18,7 +18,7 @@ API REST para gerenciamento de tarefas, desenvolvida com **Spring Boot**, **MySQ
 
 ### Pré-requisitos
 - Ter o Docker e Docker Compose instalados em sua máquina.
-- - [Postman](https://www.postman.com/downloads/) **ou** o plugin **REST Client** [Obsidian](https://obsidian.md/) para requisição e resposta
+- - [Postman](https://www.postman.com/downloads/)( Preferencia ) para requisição e resposta
 
 ### 1️⃣ Clone o repositório
 ```bash
