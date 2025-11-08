@@ -22,12 +22,11 @@ API REST para gerenciamento de tarefas, desenvolvida com **Spring Boot**, **MySQ
 
 ### 1️⃣ Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio ```
-
+git clone https://github.com/GabrielTheDEV/TasksMenager-with-SpringBoot
+```
 2️⃣ Suba os containers
 ```bash
-docker-compose up -d
+docker-compose up --d
 ```
 A API estará disponível em:
 ```bash
