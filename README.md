@@ -28,18 +28,22 @@ cd nome-do-repositorio ```
 2️⃣ Suba os containers
 ```bash
 docker-compose up -d
-
+```
 A API estará disponível em:
+```bash
 👉 http://localhost:8080
+```
 O banco MySQL estará rodando na porta 3310.
 
 ### Criar uma tarefa
+```bash
 POST http://localhost:8080/app/tasks
 Content-Type: application/json
-
 {
   "description": "Aprender Spring Boot"
 }
-
+```
 ### Listar tarefas
+```bash
 GET http://localhost:8080/app/tasks
+```
