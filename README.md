@@ -26,7 +26,7 @@ git clone https://github.com/GabrielTheDEV/TasksMenager-with-SpringBoot
 ```
 2️⃣ Suba os containers
 ```bash
-docker-compose up --d
+docker-compose up --build
 ```
 A API estará disponível em:
 ```bash
