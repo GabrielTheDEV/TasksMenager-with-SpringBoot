@@ -34,6 +34,8 @@ A API estará disponível em:
 ```
 O banco MySQL estará rodando na porta 3310.
 
+# Operações da API
+
 ### Criar uma tarefa
 ```bash
 POST http://localhost:8080/app/tasks
