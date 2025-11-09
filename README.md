@@ -50,6 +50,14 @@ GET http://localhost:8080/app/tasks
 ```bash
 GET http://localhost:8080/app/tasks/id
 ```
+### Filtrar tarefas concluidas
+```bash
+GET http://localhost:8080/app/tasks?completed=true
+```
+### Filtra tarefas incompletas
+```bash
+GET http://localhost:8080/app/tasks?completed=false
+```
 ### Deletar Tarefa
 ```bash
 DELETE http://localhost:8080/app/tasks/id
@@ -61,4 +69,12 @@ Content-Type: application/json
 {
   "description": "Nova descrição"
 }
+```
+### Marcar como Concluido 
+```bash
+PATCH http://localhost:8080/app/tasks/id/completed
+```
+### Marcar como Incompleto]
+```bash
+PATCH http://localhost:8080/app/tasks/id/incomplete
 ```
