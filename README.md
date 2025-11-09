@@ -46,3 +46,15 @@ Content-Type: application/json
 ```bash
 GET http://localhost:8080/app/tasks
 ```
+### Buscar tarefa pelo Id
+```bash
+GET http://localhost:8080/app/tasks/id
+```
+### Deletar Tarefa
+```bash
+DELETE http://localhost:8080/app/tasks/id
+```
+### Atualizar tarefa
+```bash
+PUT http://localhost:8080/app/tasks
+```
