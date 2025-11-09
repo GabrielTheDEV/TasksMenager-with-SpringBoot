@@ -39,7 +39,7 @@ O banco MySQL estará rodando na porta 3310.
 POST http://localhost:8080/app/tasks
 Content-Type: application/json
 {
-  "description": "Aprender Spring Boot"
+  "description": "Descrição da Tarefa"
 }
 ```
 ### Listar tarefas
@@ -56,5 +56,9 @@ DELETE http://localhost:8080/app/tasks/id
 ```
 ### Atualizar tarefa
 ```bash
-PUT http://localhost:8080/app/tasks
+POST http://localhost:8080/app/tasks/id
+Content-Type: application/json
+{
+  "description": "Nova descrição"
+}
 ```
