@@ -4,7 +4,7 @@ API REST para gerenciamento de tarefas, desenvolvida com **Spring Boot**, **MySQ
 
 ---
 
-## 🚀 Tecnologias
+## Tecnologias
 - **Java 17+**
 - **Spring Boot**
 - **Spring Data JPA**
